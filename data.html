@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="block" align="center">
+        <span>
+        <h1 id="appName">GROCERIES LIST</h1>
+        <label for="fname" id="user">Item Name:</label>
+        <input type="text" id="iname" name="nameis" class="list"><br>
+        
+        <button style="visibility:hidden;" id="apply_btn" onclick="edit()">Apply Changes</button>
+        <br>
+        <label for="fname" id="user">Quantity:</label>
+        <input type="number" id="qname" name="nameis" class="list" value= 0>
+        <button type="button" style="border-radius: 10px; color: rgb(12, 4, 20);" id="add_btn" onclick=addele()><b>Add</b> </button><br>
+    
+        <button onclick="restore()">Restore</button>
+        <button onclick="clear()">Clear</button>
+        <!-- <button type="button" style="border-radius: 10px; color: rgb(12, 4, 20);" class="add" onclick=qty()><b>+</b> </button>        -->
+</span>
+
+    <!-- <ol id="itemslist">
+        <li>Cauliflower</li>
+        <li>Lady Finger</li>
+    </ol> -->
+
+    </div><br><br>
+    <table border="1px" align="center" id="addrow">
+        <tr>
+        <th>S.No.</th>
+        <th>Item Name</th>
+        <th>Quantity</th>
+        <th>Modify</th>
+        </tr>
+
+        <!-- <tr>
+            <td>1.</td>
+            <td>Canvas</td>
+            <td>45</td> 
+            <td>
+                <button id="edit">EDIT</button>
+                <button id="delete">DELETE</button>
+            </td>
+        </tr> -->
+        <!-- <tr id="newrow">
+
+        </tr> -->
+    </table>
+    <div id="editid" style="visibility: hidden;"></div>
+    <script src="data.js"></script>
+</body>
+</html>
